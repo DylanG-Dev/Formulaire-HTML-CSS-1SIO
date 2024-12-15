@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="image/MarioLuigiLogo.png" alt="Logo" class="Logo">
+    </div>
+    <h2>
+        Formulaire de commande de pizza
+    </h2>
+    <form method="get" action="https://bthouverez.fr/sio/form.php">
+        <div>
+            <label for="nompre"><strong>Nom complet :</strong></label>
+            <input id="nompre" type="text" style="width: 190px;" placeholder="Nom Prenom" name="nompre">
+        </div>
+        <div>
+            <label for="num"><strong>Numéro de téléphone :</strong></label>
+            <input id="num" type="text" placeholder="+33" style="width: 95px;" name="num">
+        </div>
+        <div>
+            <label for="adresse"><strong>Adresse de livraison :</strong></label>
+            <input id="adresse" type="text" style="width: 250px;" placeholder="78 avenue Jean Jaurès, 69005, Lyon" name="adresse">
+        </div>
+        <div class="row">
+            <label for="oui_non_radio">Souhaitez-vous une pizza sans gluten ?</label>
+            <p>
+                <input type="radio" name="oui_non_radio">Oui</input>
+            </p>
+            <p>
+                <input type="radio" name="oui_non_radio">Non</input>
+            </p>
+        </div>
+        <div>
+            <label for="date"><strong>Date :</strong></label>
+            <input id="date" type="date" name="date">
+        </div>
+        <table>
+            <tr>
+                <th scope="col">Pizza</th>
+                <th scope="col">Prix</th>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Margherita" type="checkbox">&nbsp;Margherita&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza hawaienne" type="checkbox">&nbsp;Pizza hawaienne&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza pesto artichaut et burrata" type="checkbox">&nbsp;Pizza pesto artichaut et burrata&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza tomate fromage" type="checkbox">&nbsp;Pizza tomate fromage&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza calzone" type="checkbox">&nbsp;Pizza calzone&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza bianca" type="checkbox">&nbsp;Pizza bianca&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza quatre fromages" type="checkbox">&nbsp;Pizza quatre fromages&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza pesto poulet" type="checkbox">&nbsp;Pizza pesto poulet&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+            <tr>
+                <th class="row" scope="row"><input name="Pizza diavola" type="checkbox">&nbsp;Pizza diavola&nbsp;
+                    <input type="number" min="0" style="width: 30px;" value="Envoyer"></th>
+                <td>8 euros</td>
+            </tr>
+        </table>
+        <div>
+            <label class="submit" for="submit"></label>
+            <input id="submit" type="submit" value="Envoyer">
+        </div>
+        </form>
+        <div class="end">
+            <a href="index.html"><em>Accueil</em></a>
+            <a href="about.html"><em>Contact</em></a>
+        </div>
+    </body>
+</html>
